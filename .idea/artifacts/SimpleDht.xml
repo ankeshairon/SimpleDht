@@ -1,0 +1,23 @@
+<component name="ArtifactManager">
+  <artifact type="apk" name="SimpleDht">
+    <output-path>$PROJECT_DIR$/out/artifacts/SimpleDht</output-path>
+    <properties id="android-properties">
+      <options>
+        <option name="keyAlias" value="mykeystore" />
+        <option name="keyPassword" value="Y2hhbmdlZA==" />
+        <option name="keyStorePassword" value="Y2hhbmdlZA==" />
+        <option name="keyStoreUrl" value="file:///usr/adt-bundle-linux-x86_64-20131030/sdk/tools/MyKeyStore" />
+        <option name="proGuardCfgFiles">
+          <list>
+            <option value="file://%MODULE_SDK_HOME%/tools/proguard/proguard-android.txt" />
+          </list>
+        </option>
+        <option name="runProGuard" value="true" />
+        <option name="signingMode" value="RELEASE_SIGNED" />
+      </options>
+    </properties>
+    <root id="archive" name="SimpleDht.apk">
+      <element id="android-final-package" facet="SimpleDht/android/Android" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,160 @@
+edu.buffalo.cse.cse486586.simpledht.OnTestClickListener -> edu.buffalo.cse.cse486586.simpledht.a:
+    java.lang.String TAG -> a
+    android.widget.TextView mTextView -> b
+    android.content.ContentResolver mContentResolver -> c
+    android.net.Uri mUri -> d
+    android.content.ContentValues mContentValues -> e
+    edu.buffalo.cse.cse486586.simpledht.SimpleDhtActivity mainActivity -> f
+    java.util.AbstractMap$SimpleEntry lastEntry -> g
+    void onClick(android.view.View) -> onClick
+    edu.buffalo.cse.cse486586.simpledht.SimpleDhtActivity access$100(edu.buffalo.cse.cse486586.simpledht.OnTestClickListener) -> a
+    android.widget.TextView access$200(edu.buffalo.cse.cse486586.simpledht.OnTestClickListener) -> b
+    java.util.AbstractMap$SimpleEntry access$302(edu.buffalo.cse.cse486586.simpledht.OnTestClickListener,java.util.AbstractMap$SimpleEntry) -> a
+    android.content.ContentValues access$400(edu.buffalo.cse.cse486586.simpledht.OnTestClickListener) -> c
+    android.net.Uri access$500(edu.buffalo.cse.cse486586.simpledht.OnTestClickListener) -> d
+    android.content.ContentResolver access$600(edu.buffalo.cse.cse486586.simpledht.OnTestClickListener) -> e
+    java.lang.String access$700() -> a
+    java.util.AbstractMap$SimpleEntry access$300(edu.buffalo.cse.cse486586.simpledht.OnTestClickListener) -> f
+edu.buffalo.cse.cse486586.simpledht.OnTestClickListener$1 -> edu.buffalo.cse.cse486586.simpledht.b:
+edu.buffalo.cse.cse486586.simpledht.OnTestClickListener$Task -> edu.buffalo.cse.cse486586.simpledht.c:
+    edu.buffalo.cse.cse486586.simpledht.OnTestClickListener this$0 -> a
+    java.lang.Void doInBackground(java.lang.Void[]) -> a
+    void onProgressUpdate(java.lang.String[]) -> a
+    boolean testInsert() -> a
+    boolean testQuery() -> b
+    void onProgressUpdate(java.lang.Object[]) -> onProgressUpdate
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+edu.buffalo.cse.cse486586.simpledht.SimpleDhtActivity -> edu.buffalo.cse.cse486586.simpledht.SimpleDhtActivity:
+    java.lang.String TAG -> a
+    android.widget.EditText editText -> b
+    void onCreate(android.os.Bundle) -> onCreate
+    java.lang.String getEditText() -> a
+    java.lang.Boolean hasText() -> b
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+edu.buffalo.cse.cse486586.simpledht.SimpleDhtActivity$1 -> edu.buffalo.cse.cse486586.simpledht.d:
+    edu.buffalo.cse.cse486586.simpledht.SimpleDhtActivity this$0 -> a
+    void run() -> run
+edu.buffalo.cse.cse486586.simpledht.SimpleDhtProvider -> edu.buffalo.cse.cse486586.simpledht.SimpleDhtProvider:
+    android.content.UriMatcher URI_MATCHER -> a
+    edu.buffalo.cse.cse486586.simpledht.databasehelper.CustomSQLiteOpenHelper sqLiteOpenHelper -> b
+    android.database.sqlite.SQLiteDatabase db -> c
+    edu.buffalo.cse.cse486586.simpledht.communicator.OperationsHandler operationsHandler -> d
+    boolean onCreate() -> onCreate
+    android.net.Uri insert(android.net.Uri,android.content.ContentValues) -> insert
+    android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String) -> query
+    int delete(android.net.Uri,java.lang.String,java.lang.String[]) -> delete
+    java.lang.String getType(android.net.Uri) -> getType
+    int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[]) -> update
+    void getDbIfNull() -> a
+    int getMyPort() -> b
+edu.buffalo.cse.cse486586.simpledht.communicator.ClientTask -> edu.buffalo.cse.cse486586.simpledht.a.a:
+    java.lang.String TAG -> a
+    int remotePort -> b
+    java.lang.String request -> c
+    void run() -> run
+edu.buffalo.cse.cse486586.simpledht.communicator.OperationsHandler -> edu.buffalo.cse.cse486586.simpledht.a.b:
+    java.lang.String TAG -> a
+    android.content.ContentResolver contentResolver -> b
+    int myPort -> c
+    int successorPort -> d
+    int predecessorPort -> e
+    java.lang.String myId -> f
+    java.lang.String successorId -> g
+    java.lang.String predecessorId -> h
+    java.util.Map receivedQueryData -> i
+    java.lang.Integer queryRequestCounter -> j
+    java.lang.Object lock -> k
+    void joinTheChord() -> a
+    void handleRequest(java.lang.String) -> a
+    void handleDeleteRequest(java.lang.String[],java.lang.String) -> a
+    void handleQueryRequest(java.lang.String[],java.lang.String) -> b
+    void queryOwnDbForKeyAndAddTo(java.lang.StringBuilder,java.lang.String) -> a
+    void handleInsertRequest(java.lang.String[],java.lang.String) -> c
+    java.lang.Boolean isInMyScope(java.lang.String) -> b
+    void handleNeighborUpdateRequest(java.lang.String,java.lang.String) -> c
+    void handleNewNodeJoinRequest(int,java.lang.String) -> a
+    java.lang.String createNeigborUpdateRequest(java.lang.Integer,java.lang.Integer) -> a
+    void sendRequestTo(java.lang.String,int) -> a
+    boolean isAGreaterThanB(java.lang.String,java.lang.String) -> d
+    boolean isALesserThanB(java.lang.String,java.lang.String) -> e
+    void setSuccessor(int,java.lang.String) -> b
+    void setPredecessor(int,java.lang.String) -> c
+    void forwardInsertRequest(java.lang.Object,java.lang.Object,java.lang.String) -> a
+    void forwardDeleteRequest(java.lang.String,java.lang.String) -> a
+    android.database.Cursor forwardQueryRequest(java.lang.String,java.lang.String) -> b
+    void waitForResults(java.lang.String,java.lang.Integer) -> a
+    void queryYourselfMeanwhile(android.database.MatrixCursor) -> a
+    java.lang.Integer forwardRequestIfThereIsASuccessor(java.lang.String,java.lang.String) -> f
+    java.lang.String createGenericRequest(int,java.lang.String,java.lang.Object[]) -> a
+    void populateResultsIntoACursor(java.lang.Integer,android.database.MatrixCursor) -> a
+    void addRowsToCursor(java.lang.String[],android.database.MatrixCursor) -> a
+    java.lang.String getIdForPort(java.lang.String) -> c
+edu.buffalo.cse.cse486586.simpledht.communicator.ServerThread -> edu.buffalo.cse.cse486586.simpledht.a.c:
+    java.lang.String TAG -> a
+    java.net.ServerSocket serverSocket -> b
+    edu.buffalo.cse.cse486586.simpledht.communicator.OperationsHandler operationsHandler -> c
+    void run() -> run
+edu.buffalo.cse.cse486586.simpledht.constants.Constants -> edu.buffalo.cse.cse486586.simpledht.b.a:
+    android.net.Uri URI -> a
+edu.buffalo.cse.cse486586.simpledht.databasehelper.CustomSQLiteOpenHelper -> edu.buffalo.cse.cse486586.simpledht.c.a:
+    void onCreate(android.database.sqlite.SQLiteDatabase) -> onCreate
+    void onUpgrade(android.database.sqlite.SQLiteDatabase,int,int) -> onUpgrade
+edu.buffalo.cse.cse486586.simpledht.listeners.OnCountClickListener -> edu.buffalo.cse.cse486586.simpledht.d.a:
+    java.lang.String TAG -> a
+    android.widget.TextView mTextView -> b
+    android.content.ContentResolver mContentResolver -> c
+    android.net.Uri mUri -> d
+    android.content.ContentValues[] mContentValues -> e
+    android.net.Uri buildUri(java.lang.String,java.lang.String) -> a
+    android.content.ContentValues[] initTestValues() -> a
+    void onClick(android.view.View) -> onClick
+    boolean testInsert() -> b
+    boolean testQuery() -> c
+edu.buffalo.cse.cse486586.simpledht.listeners.OnDeleteClickListener -> edu.buffalo.cse.cse486586.simpledht.d.b:
+    java.lang.String TAG -> a
+    android.widget.TextView mTextView -> b
+    android.content.ContentResolver mContentResolver -> c
+    android.net.Uri mUri -> d
+    android.content.ContentValues mContentValues -> e
+    edu.buffalo.cse.cse486586.simpledht.SimpleDhtActivity mainActivity -> f
+    java.lang.String lastEntry -> g
+    void onClick(android.view.View) -> onClick
+    edu.buffalo.cse.cse486586.simpledht.SimpleDhtActivity access$100(edu.buffalo.cse.cse486586.simpledht.listeners.OnDeleteClickListener) -> a
+    android.widget.TextView access$200(edu.buffalo.cse.cse486586.simpledht.listeners.OnDeleteClickListener) -> b
+    java.lang.String access$302(edu.buffalo.cse.cse486586.simpledht.listeners.OnDeleteClickListener,java.lang.String) -> a
+    android.net.Uri access$400(edu.buffalo.cse.cse486586.simpledht.listeners.OnDeleteClickListener) -> c
+    android.content.ContentResolver access$500(edu.buffalo.cse.cse486586.simpledht.listeners.OnDeleteClickListener) -> d
+    java.lang.String access$600() -> a
+    java.lang.String access$300(edu.buffalo.cse.cse486586.simpledht.listeners.OnDeleteClickListener) -> e
+edu.buffalo.cse.cse486586.simpledht.listeners.OnDeleteClickListener$1 -> edu.buffalo.cse.cse486586.simpledht.d.c:
+edu.buffalo.cse.cse486586.simpledht.listeners.OnDeleteClickListener$Task -> edu.buffalo.cse.cse486586.simpledht.d.d:
+    edu.buffalo.cse.cse486586.simpledht.listeners.OnDeleteClickListener this$0 -> a
+    java.lang.Void doInBackground(java.lang.Void[]) -> a
+    void onProgressUpdate(java.lang.String[]) -> a
+    boolean testDelete() -> a
+    boolean testQuery() -> b
+    void onProgressUpdate(java.lang.Object[]) -> onProgressUpdate
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+edu.buffalo.cse.cse486586.simpledht.listeners.OnDumpClickListener -> edu.buffalo.cse.cse486586.simpledht.d.e:
+    java.lang.String targetId -> a
+    java.lang.String TAG -> b
+    android.widget.TextView textView -> c
+    android.content.ContentResolver contentResolver -> d
+    android.net.Uri uri -> e
+    void onClick(android.view.View) -> onClick
+    android.net.Uri access$100(edu.buffalo.cse.cse486586.simpledht.listeners.OnDumpClickListener) -> a
+    java.lang.String access$200(edu.buffalo.cse.cse486586.simpledht.listeners.OnDumpClickListener) -> b
+    android.content.ContentResolver access$300(edu.buffalo.cse.cse486586.simpledht.listeners.OnDumpClickListener) -> c
+    java.lang.String access$400() -> a
+    android.widget.TextView access$500(edu.buffalo.cse.cse486586.simpledht.listeners.OnDumpClickListener) -> d
+edu.buffalo.cse.cse486586.simpledht.listeners.OnDumpClickListener$1 -> edu.buffalo.cse.cse486586.simpledht.d.f:
+edu.buffalo.cse.cse486586.simpledht.listeners.OnDumpClickListener$Print -> edu.buffalo.cse.cse486586.simpledht.d.g:
+    edu.buffalo.cse.cse486586.simpledht.listeners.OnDumpClickListener this$0 -> a
+    java.lang.Void doInBackground(java.lang.Void[]) -> a
+    void onProgressUpdate(java.lang.String[]) -> a
+    void onProgressUpdate(java.lang.Object[]) -> onProgressUpdate
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+edu.buffalo.cse.cse486586.simpledht.utils.Utils -> edu.buffalo.cse.cse486586.simpledht.e.a:
+    android.net.Uri buildUri(java.lang.String,java.lang.String) -> a
+    java.lang.String genHash(int) -> a
+    java.lang.String genHash(java.lang.String) -> a
